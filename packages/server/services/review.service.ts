@@ -9,7 +9,7 @@ export const reviewService = {
          return existingSummary;
       }
 
-      const reviews = await reviewRepository.getReviews(productId, 10);
+      const reviews = await reviewRepository.getReviews(productId, 1);
       const joinedReviews = reviews.map((r) => r.content).join('\n\n');
 
       const summary = await llmClient.summarizeReviews(joinedReviews);

@@ -22,7 +22,7 @@ function App() {
                   <Route path="/chat" element={<ChatBot />} />
                   <Route
                      path="/reviews"
-                     element={<ReviewList productId={2} />}
+                     element={<ReviewList productId={3} />}
                   />
                   <Route
                      path="/"
